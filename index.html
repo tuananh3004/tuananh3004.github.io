@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Curriculum Vitae</title>
+    <style>
+            .pdfobject-container { height: 600px;}
+            .pdfobject { border: 1px solid #666; }
+            </style>
 </head>
 <body>
-    <div style="text-align: center;"><iframe height="768" src="https://drive.google.com/file/d/1YgDIXEVUt7uaGVCb6eC4yxV4F33LtH_m/preview" width="640"></iframe></div>
+    <div id="cv"></div>
+    <script src="pdf.js"></script>
+    <script>PDFObject.embed("CV_Nguyen_Ngoc_Hieu.pdf", "#cv");</script>
 </body>
+
 </html>
